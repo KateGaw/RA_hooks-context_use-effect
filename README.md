@@ -1,4 +1,4 @@
-
+[![Build status](https://ci.appveyor.com/api/projects/status/hpocxxmk10k3b02w?svg=true)](https://ci.appveyor.com/project/KateGaw/ra-hooks-context-use-effect)
 
 https://kategaw.github.io/RA_hooks-context_use-effect/
 
