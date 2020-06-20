@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RA_hooks-context_use-effect/static/css/main.5f236d42.chunk.css",
+    "main.js": "/RA_hooks-context_use-effect/static/js/main.48a3dda5.chunk.js",
+    "main.js.map": "/RA_hooks-context_use-effect/static/js/main.48a3dda5.chunk.js.map",
+    "runtime-main.js": "/RA_hooks-context_use-effect/static/js/runtime-main.8dc09a1d.js",
+    "runtime-main.js.map": "/RA_hooks-context_use-effect/static/js/runtime-main.8dc09a1d.js.map",
+    "static/js/2.b0557705.chunk.js": "/RA_hooks-context_use-effect/static/js/2.b0557705.chunk.js",
+    "static/js/2.b0557705.chunk.js.map": "/RA_hooks-context_use-effect/static/js/2.b0557705.chunk.js.map",
+    "index.html": "/RA_hooks-context_use-effect/index.html",
+    "precache-manifest.8aee8693ec96783d9c58ff8c78176fe6.js": "/RA_hooks-context_use-effect/precache-manifest.8aee8693ec96783d9c58ff8c78176fe6.js",
+    "service-worker.js": "/RA_hooks-context_use-effect/service-worker.js",
+    "static/css/main.5f236d42.chunk.css.map": "/RA_hooks-context_use-effect/static/css/main.5f236d42.chunk.css.map",
+    "static/js/2.b0557705.chunk.js.LICENSE.txt": "/RA_hooks-context_use-effect/static/js/2.b0557705.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8dc09a1d.js",
+    "static/js/2.b0557705.chunk.js",
+    "static/css/main.5f236d42.chunk.css",
+    "static/js/main.48a3dda5.chunk.js"
+  ]
+}
