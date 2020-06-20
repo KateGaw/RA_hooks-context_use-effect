@@ -2,8 +2,10 @@ import React from "react";
 import "./App.css";
 
 import List from "./components/List";
+import Details from "./components/Details";
 
 function App() {
+  const [output, setOutput] = React.useState({});
   return (
     <div className="container">
       <div className="background-element"> </div>{" "}
@@ -11,7 +13,8 @@ function App() {
         <div className="highlight-overlay"> </div>{" "}
       </div>{" "}
       <div className="window">
-        <List />
+        <List setOutput={setOutput} />
+        <Details output={output} />
       </div>{" "}
     </div>
   );

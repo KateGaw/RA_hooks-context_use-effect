@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Details from "./Details";
-
 const path =
   "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/users.json";
 
-const List = () => {
-  const [isLoading, setIsLoading] = useState(false);
+const List = ({ setOutput }) => {
+  const [isLoading, setIsLoading] = useState(true);
   const [selectedId, setSelectedId] = useState(null);
   const [usersList, setUsersList] = useState([]);
 
@@ -18,6 +16,12 @@ const List = () => {
       setIsLoading(false);
     });
   }, []);
+
+  const handleClick = (id, name) => {
+    setOutput({ id, name });
+    setSelectedId(id);
+  };
+
   return (
     <>
       <div className="users">
@@ -28,16 +32,13 @@ const List = () => {
             <li
               key={item.id}
               className={item.id === selectedId ? "item active_item" : "item"}
-              onClick={() => item.id !== selectedId && setSelectedId(item.id)}
+              onClick={() => handleClick(item.id, item.name)}
             >
               {item.name}
             </li>
           ))
         )}
       </div>
-      {selectedId && (
-        <Details info={usersList.find((user) => user.id === selectedId)} />
-      )}
     </>
   );
 };

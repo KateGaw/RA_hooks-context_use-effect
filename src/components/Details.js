@@ -3,21 +3,22 @@ import PropTypes from "prop-types";
 import axios from "axios";
 
 const Details = (props) => {
-  const { id } = props.info;
   const [info, setInfo] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setIsLoading(true);
-    axios
-      .get(
-        `https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/${id}.json`
-      )
-      .then((resp) => {
-        setInfo(resp.data);
-        setIsLoading(false);
-      });
-  }, [id]);
+    if (props.output.id !== undefined) {
+      setIsLoading(true);
+      axios
+        .get(
+          `https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/${props.output.id}.json`
+        )
+        .then((resp) => {
+          setInfo(resp.data);
+          setIsLoading(false);
+        });
+    }
+  }, [props.output.id]);
 
   return (
     <>
